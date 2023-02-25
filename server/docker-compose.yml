@@ -1,0 +1,21 @@
+version: '3'
+services:
+  fritzbox_exporter:
+    image: ghcr.io/sberk42/fritzbox_exporter/fritzbox_exporter:latest
+    container_name: fritzbox_exporter
+    ports:
+      - "9042:9042"
+    restart: unless-stopped
+    environment:
+      GATEWAY_URL: ""
+      USERNAME: ""
+      PASSWORD: ""
+      LISTEN_ADDRESS: 0.0.0.0:9042
+    volumes:
+      - /opt/fritzbox_exporter/data/config/metrics.json:/app/metrics.json
+      - /opt/fritzbox_exporter/data/config/metrics-lua.json:/app/metrics-lua.json
+      - /opt/fritzbox_exporter/data/boot.sh:/app/boot.sh
+      - /opt/fritzbox_exporter/data/nginx.log:/app/nginx.log
+    extra_hosts:
+      - fritz.box:127.0.0.1
+    entrypoint: ["sh", "-c", "sh /app/boot.sh"]
