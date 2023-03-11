@@ -11,6 +11,11 @@ Working with Prometheus over a remote server.
 - Prometheus
 - Grafana
 
-## Installation
-
+## Installation  
 For the installation, please refer to the [wiki](https://github.com/KleinDevDE/fritzbox_exporter_remote/wiki).
+
+
+## Troubleshooting  
+If you are having problems, make sure you have read the troubleshooting pages on the wiki.  
+Maybe that can help you with your problem.  
+Otherwise you can create an issue
