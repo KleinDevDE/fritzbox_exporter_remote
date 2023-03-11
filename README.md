@@ -5,7 +5,7 @@ FRITZ!Box Exporter running external with Reverse-Proxy connections to the local 
 
 
 ## Requirements
-- Raspberry Pi (1/2/3/4/Zero etc.)
+- Raspberry Pi (1/2/3/4/Zero etc.) or another hardware with an Linux distribution
 - FRITZ!Box
 - Server (with docker installed)
 - Prometheus
