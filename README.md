@@ -1,3 +1,13 @@
+## ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) BEWARE ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+The reverse proxy makes it possible to access the following FRITZ!Box ports from outside:  
+- 80 - User interface  
+- 49000 - TR-064
+  
+Use at your own risk, I assume no liability!  
+Don't share your IP Address to anyone!  
+
+---
+  
 # FRITZ!Box Exporter for Grafana
 FRITZ!Box Exporter running external with Reverse-Proxy connections to the local FRITZ!Box.
 
